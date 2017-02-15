@@ -1,0 +1,322 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.project-body {
+    background: url(../img/2.10.15GymDuringColdMonths.jpg) no-repeat center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.57);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    padding-top: 100px;
+}
+.login {
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 50px;
+}
+.login h3 {
+    font-size: 25px;
+    color: #757b67;
+}
+.login input {
+    width: 250px;
+    margin: 20px 0;
+    height: 30px;
+    border: 2px solid #757b67;
+    outline:0;
+    text-indent: 5px;
+    color: #757b67;
+}
+
+.login button {
+    display: block;
+    margin: 0 auto;
+    outline: 0;
+    height: 30px;
+    width: 100px;
+    background: #f8655b;
+    border: transparent;
+    color: #fff;
+    cursor: pointer
+}
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: #ece7e0;
+}
+.menu-logo {
+    display: inline-block
+}
+.menu-logo img{
+    width: 200px;
+    height: 70px;
+}
+.menu span {
+    display: inline-block;
+    float: right;
+    margin-top: 26px;
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer
+}
+.sidebar {
+    margin-top: 70px;
+    position: fixed;
+    left: 0;
+    width: 180px;
+    height: 100%;
+    border-right: 1px solid #f3f3f3;
+    transition: 0.4s
+}
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px 10px 15px 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.sidebar ul li:hover {
+    background: #e6e6e6;
+}
+.sidebar ul li i {
+    vertical-align: middle;
+    color: #bfbebe;
+    padding: 0 10px 0 0;
+}
+.dashboard {
+    width: 83%;
+    height: auto;
+    overflow-y: auto;
+    padding-left: 205px;
+    padding-top: 85px;
+    transition: 0.4s
+}
+#collapse-menu-in {
+    display:none
+}
+#collapse-menu-out, #collapse-menu-in {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    cursor: pointer
+}
+
+.adduser {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.adduser input {
+    width: 250px;
+    margin: 13px 0 15px 0;
+    height: 30px;
+    border: 2px solid #757b67;
+    outline:0;
+    text-indent: 5px;
+    color: #757b67;
+}
+
+.adduser button {
+    display: block;
+    margin: 0 auto;
+    outline: 0;
+    height: 30px;
+    width: 100px;
+    background: #f8655b;
+    border: transparent;
+    color: #fff;
+    cursor: pointer
+}
+
+.userresponse {
+   background: #f8655b;
+    color: #fff;
+    width: 300px;
+    min-height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    position: absolute;
+    left: 180px;
+    right: 0;
+    margin-top: 100px;
+    display: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.userresponseindex {
+     background: #f8655b;
+    color: #fff;
+    width: 300px;
+    min-height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 100px;
+    display: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.clientrow {
+    margin: 10px 0;
+}
+
+.clientrow .name, .registered {
+    display: inline-block;
+    width: 36%;
+}
+
+.clientrow .deleteClients {
+    outline: 0;
+    height: 30px;
+    width: 100px;
+    background: #f8655b;
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+}
+
+.clientrow .editClients {
+    outline: 0;
+    height: 30px;
+    width: 100px;
+    background: #5e9bda;
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 5px 0 0;
+}
+
+.popup input {
+    width: 250px;
+    margin: 13px 0 15px 0;
+    height: 30px;
+    border: 2px solid #757b67;
+    outline:0;
+    text-indent: 5px;
+    color: #757b67;
+}
+
+.popup {
+    width: 400px;
+    position: absolute;
+    background: white;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(138,138,138,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(138,138,138,1);
+    box-shadow: 0px 0px 5px 0px rgba(138,138,138,1);
+    margin-top: 150px;
+    padding: 20px 0;
+    display: none;
+}
+
+.popup button {
+    display: block;
+    margin: 0 auto;
+    outline: 0;
+    height: 30px;
+    width: 100px;
+    background: #f8655b;
+    border: transparent;
+    color: #fff;
+    cursor: pointer
+}
+
+.active {
+    background: #e2e2e2;
+}
+
+#clinedaddval{
+    width: 250px;
+    margin: 13px 0 15px 0;
+    height: 30px;
+    border: 2px solid #757b67;
+    outline:0;
+    text-indent: 5px;
+    color: #757b67;
+}
+
+#addClientButton {
+    outline: 0;
+    height: 30px;
+    width: 100px;
+    background: #f8655b;
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+#plans {
+    border: 2px solid #757b67;
+    padding: 4px;
+    margin: 0 5px;
+    outline:0
+}
+
+.calorie_calculator_activities {
+    font-size: 80%;
+}
+
+.calorie_calculator_top_table {
+    font-size:12px;
+}
+
+.calorie_calculator_rez {
+    color:darkblue;
+    font-weight:bold;
+}
+
+.calorie_calculator_activity_box {
+    background-color:white;
+}
+
+.calorie_calculator_activity_title {
+    font-size:90%;
+}
+
+
+.calorie_calculator_results {
+    background-color:white;
+}
+
+
+.calorie_calculator_minutes_left_error {
+    background-color:#FF0000;
+}
